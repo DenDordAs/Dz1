@@ -1,5 +1,129 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
+.container {
+    width: 100%;
+    max-width: 1315px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../Img/main-screen__bgc.jpg);
+    background-repeat: no-repeat;
+}
+
+header .container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.header_menu {
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 270px;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 745px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    color: #FFFFFF;
+}
+
+.header_button_office {
+    padding: 10px 30px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    border: none;
+}
+
+.header_content {
+    padding: 182px 0 218px 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+    /* or 90px */
+    color: #FFFFFF;
+    text-align: left;
+    max-width: 920px;
+}
+
+.timer {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 50px 0 218px 0;
+}
+
+.timer li {
+    width: 115px;
+    height: 112px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timer li h5 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    /* or 50px */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.timer li span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.pupils {
+    background-color: #121212;
+}
+
+.pupils_content button {
+    width: 169px;
+    height: 44px;
+    left: 312px;
+    top: 873px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+}
+
+.pupils_content button a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
