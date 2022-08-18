@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+body {
+    background-image: url(../Img/bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container {
     width: 100%;
     max-width: 1315px;
@@ -14,6 +21,8 @@
 header {
     background-image: url(../Img/main-screen__bgc.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
 }
 
 header .container {
@@ -52,17 +61,18 @@ nav a {
 }
 
 .header_button_office {
-    padding: 10px 30px;
+    display: flex;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
     border: none;
 }
 
-.header_button_office a{
+.header_button_office a {
+    padding: 10px 30px;
 }
 
 .header_content {
-    padding: 182px 0 218px 0;
+    padding: 132px 0 210px 0;
 }
 
 h1 {
@@ -79,7 +89,7 @@ h1 {
     display: flex;
     list-style-type: none;
     gap: 30px;
-    margin: 50px 0 218px 0;
+    margin-top: 50px;
 }
 
 .timer li {
@@ -116,31 +126,41 @@ h1 {
 
 .pupils_content {
     display: flex;
+    align-items: center;
     gap: 81px;
+    padding: 43px 0;
 }
 
 .pupils_content button {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     border-radius: 50px;
     border: none;
-    padding: 10px 30px;
+    display: flex;
+    height: max-content;
 }
 
 .pupils_content button a {
+    padding: 10px 30px;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
     color: #FFFFFF;
-    text-decoration:none ;
-    
+    text-decoration: none;
+
 }
 
-.all_students {
+.students {
     display: flex;
+    flex-direction: column;
+    max-width: 251px;
+    width: 100%;
+    gap: 10px;
 }
 
-.students p {
+.students p,
+.all_earned p,
+.progress_range span {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -149,14 +169,179 @@ h1 {
     opacity: 0.4;
 }
 
-.number{
-    margin-left: 30px;
+.students div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.number p {
+.students span,
+.all_earned span {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     /* identical to box height, or 24px */
     color: #FFFFFF;
+}
+
+.earned {
+    max-width: 714px;
+    width: 100%;
+}
+
+.all_earned {
+    max-width: 279px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress_line {
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+    margin: 8px 0 5px 0;
+}
+
+.progress_line .complete {
+    width: 40%;
+    height: 6px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.progress_range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speed_start {
+    margin-top: 200px;
+}
+
+@keyframes rotate_image {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.title img {
+    animation: 3s linear 1s infinite reverse both running rotate_image;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    /* or 67px */
+    color: #FFFFFF
+}
+
+.speed_start .container>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    color: #FFFFFF;
+    opacity: 0.5;
+    max-width: 411px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.procent {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.procent li {
+    max-width: 324px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    /* or 50px */
+    color: #FFFFFF;
+}
+
+.procent_bar {
+    width: 100%;
+    height: 80px;
+    margin: 20px 0 35px 0;
+    display: flex;
+    align-items: center;
+}
+
+.all_procent{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.procent p {
+    width: 95%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.three_quarters{
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.half{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.small{
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.partners{
+    margin-top: 200px;
+}
+
+.partners_list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partners_list li{
+    padding: 29px 65px;
+}
+
+.partners_list li:nth-child(n+5){
+    border-top: 1px solid rgba(255, 255, 255, .3);
 }
