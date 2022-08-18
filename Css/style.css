@@ -58,6 +58,9 @@ nav a {
     border: none;
 }
 
+.header_button_office a{
+}
+
 .header_content {
     padding: 182px 0 218px 0;
 }
@@ -111,13 +114,16 @@ h1 {
     background-color: #121212;
 }
 
+.pupils_content {
+    display: flex;
+    gap: 81px;
+}
+
 .pupils_content button {
-    width: 169px;
-    height: 44px;
-    left: 312px;
-    top: 873px;
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
 }
 
 .pupils_content button a {
@@ -125,5 +131,32 @@ h1 {
     font-size: 16px;
     line-height: 150%;
     text-align: center;
+    color: #FFFFFF;
+    text-decoration:none ;
+    
+}
+
+.all_students {
+    display: flex;
+}
+
+.students p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.number{
+    margin-left: 30px;
+}
+
+.number p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
     color: #FFFFFF;
 }
