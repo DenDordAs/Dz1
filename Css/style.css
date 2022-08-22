@@ -458,12 +458,140 @@ h3 {
     width: 100%;
 }
 
-.program_learning_content{
+.program_learning_content {
+    margin-top: 80px;
     display: flex;
     max-width: 677px;
     width: 100%;
 }
 
-.program_learning_content li{
+.program_list_l {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.program_list_l p {
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.program_list_l h4 {
+    text-align: end;
+}
+
+.program_list_r {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.program_list_r p {
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.program_list_l h4 {
+    text-align: start;
+}
+
+.program_learning_content li {
     max-width: 288px;
+    display: flex;
+    align-items: center;
+}
+
+.program_learning_content li p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.program_learning_content li h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    color: #FFFFFF;
+}
+
+.gor_line {
+    max-width: 40px;
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #FFFFFF;
+}
+
+.line {
+    width: 6px;
+    height: 677px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.your_entries {
+    margin-top: 200px;
+}
+
+.your_entries_list {
+    margin-top: 113px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.your_entries_list li {
+    max-width: 216px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.your_entries_list li h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    text-align: center;
+    color: #FFFFFF;
+    margin: 40px 0 15px 0;
+}
+
+.your_entries_list li p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+.button_bio{
+    display: flex;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+}
+
+.button_bio a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.articles_week{
+    margin-top: 200px;
 }
