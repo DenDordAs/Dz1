@@ -69,6 +69,7 @@ nav a {
 
 .header_button_office a {
     padding: 10px 30px;
+    border-radius: 50px;
 }
 
 .header_content {
@@ -575,9 +576,9 @@ h3 {
     margin-bottom: 35px;
 }
 
-.button_bio{
+.button_bio {
     display: flex;
-    border: 2px solid #FFFFFF;
+    border: none;
     border-radius: 50px;
 }
 
@@ -590,8 +591,107 @@ h3 {
     /* identical to box height, or 24px */
     text-align: center;
     color: #FFFFFF;
+    border-radius: 50px;
+    border: 2px solid #FFFFFF;
 }
 
-.articles_week{
+.articles_week {
     margin-top: 200px;
+}
+
+.articles_week .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles_week h2 {
+    text-align: center;
+}
+
+.articles_week p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+    max-width: 411px;
+    margin: 30px 0 60px 0;
+}
+
+.input_follow {
+    display: flex;
+    background: #FFFFFF;
+    opacity: 0.25;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.input_follow input {
+    outline: none;
+    height: 44px;
+    width: 353px;
+}
+
+.input_follow input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.button_follow {
+    display: flex;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    border: none;
+}
+
+.button_follow a {
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.social_list {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0 50px 0;
+}
+
+.social_list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    border: none;
+}
+
+.social_list li a {
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.articles_week .templates {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
 }
